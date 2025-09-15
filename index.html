@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortexzz Community - Gaming & Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-gamepad"></i>
+                <span>Vortexzz</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Über uns</a></li>
+                <li><a href="#mod-apply" class="nav-link">Mod werden</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.twitch.tv/vortexzzfnr" target="_blank" class="social-btn twitch">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="https://discord.gg/g2SnbQk2Ds" target="_blank" class="social-btn discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Gaming Community</span>
+                </div>
+                <h1 class="hero-title">
+                    Willkommen bei der
+                    <span class="gradient-text">Vortexzz Community</span>
+                </h1>
+                <p class="hero-description">
+                    Trete unserer lebendigen Gaming-Community bei! Hier findest du Gleichgesinnte, 
+                    spannende Events und die Möglichkeit, Teil unseres Moderator-Teams zu werden.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://www.twitch.tv/vortexzzfnr" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-twitch"></i>
+                        Twitch folgen
+                    </a>
+                    <a href="https://discord.gg/g2SnbQk2Ds" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-discord"></i>
+                        Discord beitreten
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-gamepad"></i>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Über unsere Community</h2>
+                <p class="section-subtitle">Eine Gaming-Community, die zusammenwächst</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Aktive Community</h3>
+                    <p>Über 1000+ aktive Mitglieder, die täglich zusammen spielen und chatten.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Regelmäßige Events</h3>
+                    <p>Wöchentliche Gaming-Events, Turniere und Community-Aktivitäten.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Moderiertes Umfeld</h3>
+                    <p>Ein sicheres und freundliches Umfeld für alle Community-Mitglieder.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mod Application Section -->
+    <section id="mod-apply" class="mod-apply">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Moderator werden</h2>
+                <p class="section-subtitle">Werde Teil unseres Moderator-Teams</p>
+            </div>
+            <div class="apply-container">
+                <form class="apply-form" id="apply-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Alter *</label>
+                            <input type="number" id="age" name="age" min="16" max="99" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="discord">Discord-Benutzername *</label>
+                        <input type="text" id="discord" name="discord" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Hast du bereits Moderator-Erfahrung? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="experience" value="yes" required>
+                                <span class="radio-custom"></span>
+                                Ja
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="experience" value="no" required>
+                                <span class="radio-custom"></span>
+                                Nein
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">Warum möchtest du Moderator werden? *</label>
+                        <textarea id="motivation" name="motivation" rows="5" required 
+                                  placeholder="Erzähle uns, warum du ein guter Moderator wärst..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i>
+                        Bewerbung absenden
+                    </button>
+                </form>
+                <div class="success-message" id="success-message">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Bewerbung erfolgreich!</h3>
+                    <p>Vielen Dank für deine Bewerbung. Wir melden uns bald bei dir!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontakt</h2>
+                <p class="section-subtitle">Verbinde dich mit uns</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-twitch"></i>
+                    </div>
+                    <h3>Twitch</h3>
+                    <p>Folge uns auf Twitch für Live-Streams und Gaming-Content</p>
+                    <a href="https://www.twitch.tv/vortexzzfnr" target="_blank" class="contact-link">
+                        @vortexzzfnr
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p>Trete unserem Discord-Server bei und werde Teil der Community</p>
+                    <a href="https://discord.gg/g2SnbQk2Ds" target="_blank" class="contact-link">
+                        Discord beitreten
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Vortexzz Community</span>
+                    </div>
+                    <p>Die beste Gaming-Community für Streamer und Zuschauer</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#about">Über uns</a></li>
+                            <li><a href="#mod-apply">Moderator werden</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Social Media</h4>
+                        <ul>
+                            <li><a href="https://www.twitch.tv/vortexzzfnr" target="_blank">Twitch</a></li>
+                            <li><a href="https://discord.gg/g2SnbQk2Ds" target="_blank">Discord</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vortexzz Community. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
